@@ -10,8 +10,8 @@
         "chatterbox_link": "https://element.io/solutions/chatterbox-embedded-live-chat-for-customer-service",
         "matrix_link": "https://matrix.org"
     },
-    "token": "KIfZDFNQH-cIqGIW",
-    "invite_user": "@bot:localhost",
+    "token": "_V.U1h-DCoVjg5sn",
+    "invite_user": "@admin:localhost",
     "encrypt_room": false,
     "avatar": "https://cdn.britannica.com/92/212692-050-D53981F5/labradoodle-dog-stick-running-grass.jpg",
     "disable_composer_until_operator_join": false
