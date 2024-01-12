@@ -1,6 +1,6 @@
 {
     "homeserver": "http://localhost:8008",
-    "auto_join_room": "!NWXgMwfJnNBSzljxZE:localhost",
+    "auto_join_room": "!rIDHaqQwmtGWsGuuiL:localhost",
     "username_prefix": "foobar",
     "header": {
         "title": "Your Fancy Title",
