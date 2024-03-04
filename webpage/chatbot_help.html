@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>smartDCS IT - AI-Chatbot Demo</title>
+    <title>smartDCS IT - AI-Chatbot Help</title>
     <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
     <style>
         body {
@@ -174,7 +174,7 @@
     <script>
         window.CHATTERBOX_CONFIG_LOCATION = "./config.json";
     </script>
-    <script src="./src/parent/parent.ts" type="module" id="chatterbox-script"></script>
+    <script src="./../src/parent/parent.ts" type="module" id="chatterbox-script"></script>
     <header>
         <div class="header-wrapper">
             <img decoding="async" src="https://smartdcsit.co.uk/wp-content/uploads/SmartDCS-Logo-Blue-Blue.svg"
@@ -190,7 +190,7 @@
             <a href="webpage/presentation.html">Presentation</a>
         </div>
         <div class="navbox">
-            <a href="webpage/chatbot_help.html">Chatbot Help</a>
+            <a href="chatbot_help.html">Chatbot Help</a>
         </div>
         <div class="navbox">
             <a href="../chatterbox.html?config=/config.json">Full Screen Chatbot</a>
@@ -204,19 +204,25 @@
         <section class="container">
             <div class="container-left">
                 <div class="content-left">
-                    <h2>AI Chatbot Demonstration</h2>
+                    <h2>AI Chatbot Connection</h2>
+                    <p>To use the chatbot we currently need a workaround to allow Firefox or Chrome to treat the
+                        insecure URL as secure. This can be done by changing your browser settings:</p>
                     <ul>
                         <li>
-                            <p>In this demo we will present our AI Chatbot utilising large language models (LLMs) to
-                                produce answers to your questions.</p>
+                            <p>Firefox: Go to <code-demo>about:config</code-demo>, and create
+                                <code-demo>dom.securecontext.allowlist</code-demo> as a comma-separated list of
+                                domains/addresses to treat as secure:
+                                <code-demo>http://172.16.0.24:5400, http://172.16.0.24:8008,
+                                    http://172.16.0.24:8000</code-demo>
+                            </p>
                         </li>
                         <li>
-                            <p>We offer the ability to quickly retrieve information from our Confluence to answer your
-                                queries also providing links to the sources.</p>
-                        </li>
-                        <li>
-                            <p>An interactive demo is available by clicking on the button in the bottom right of the
-                                screen.</p>
+                            <p>Chrome: Go to
+                                <code-demo>chrome://flags/#unsafely-treat-insecure-origin-as-secure</code-demo>, and
+                                enter a comma-separated list of origins to treat as secure:
+                                <code-demo>http://172.16.0.24:5400, http://172.16.0.24:8008,
+                                    http://172.16.0.24:8000</code-demo>
+                            </p>
                         </li>
                     </ul>
                     <p>Please note that it is currently in heavy development so some features may not yet be
@@ -225,7 +231,6 @@
             </div>
             <div class="container-right">
                 <div class="content-right">
-                    <img src="webpage/diagram.png" alt="Your Image" style="width: 50%; min-width: 250px;">
                 </div>
             </div>
         </section>
