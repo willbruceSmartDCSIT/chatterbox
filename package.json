@@ -6,7 +6,7 @@
   "author": "matrix.org",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "vite --port 5400",
+    "start": "vite --port 80",
     "build": "tsc && vite build && vite build --config parent-vite.config.js && scripts/after-build.sh",
     "preview": "vite preview"
   },
